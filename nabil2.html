@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="theme-color" content="#ACB6E5">
+    <title>Nabil Ni Boss</title>
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+  </head>
+  <body>
+    <header>
+      <div class="progress-bar" id="nabilprogressscroll"></div>
+      <div class="nabiltugas">
+        <h1>TUGAS 2</h1>
+        <h3>Pemrograman Web Dinamis</h3>
+        <h4>Link, List, Image, Table & Form</h4>
+      </div>
+      <div class="marginfixnabil"> 
+        <div class="nabiltitlecontent">Result</div>
+      </div>
+      <hr>
+    </header>  
+    <div class="marginfixnabil"> 
+      <main>
+        <div class="nabilbox">
+          <h1>Silahkan</h1>
+          <div class="nabilfixscrollhorizontal">
+            <div class="nabilfixscrollhorizontaldisplay">
+              <div class="sertiftemplate">
+                <div class="sertifteks">Sertifikat</div>
+                <div id="sertifjudul">STACKOVERFLOW</div>
+                <div>diberikan kepada:</div>
+                <div id="sertifnama" style="text-transform:uppercase;">Nabil</div>
+                <div>dari institusi:</div>
+                <div id="sertifinstitusi">Universitas Makmur Sekali</div>
+                <div class="sertifket">Telah mengikuti kegiatan yang diberikan dengan baik, dalam rangka mencerdaskan kehidupan bangsa dan negara. Bersama membangun negeri untuk masa depan yang lebih baik dan lebih cerah.</div>
+                <div class="sertifpenyelenggara">
+                  <div>Sukoharjo, 24 Juli 2021</div>
+                  <div>Penyelenggara</div>
+                  <div class="sertifttd">Nabil</div>
+                  <div>Nabil Aziz Bima Anggita</div>
+                  <div>L200190083</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="index.html"><button class="nabilsubmit">Buat Lagi</button></a>   
+        </div>
+        <hr>
+      </main>
+    </div>
+    <div class="marginfixnabil"> 
+      <footer>
+        <div class="nabilbox">
+          <h1>Terima Kasih</h1>
+          <ul>
+            <li>stackoverflow.com</li>
+            <li>w3schools.com</li>
+            <li>geeksforgeeks.org</li>
+            <li>codegrepper.com</li>
+            <li>dafont.com</li>
+            <li>flaticon.com</li>
+            <li>pinterest.com</li>
+         </ul>   
+        </div>
+        <hr>
+        <div class="nabilbox">
+          <h1>Donate</h1>
+          <ul>
+            <li>083146542084 (Dana)</li>
+            <li>085747482287 (Pulsa)</li>
+         </ul>   
+        </div>
+        <hr> 
+        <div class="nabilbox">
+          <h1>Tentang Saya</h1>
+          <table>
+            <tr><td>Nama</td><td>:</td><td>Nabil Aziz Bima Anggita</td></tr>
+            <tr><td>NIM</td><td>:</td><td>L200190083</td></tr>
+            <tr><td>Universitas</td><td>:</td><td>Universitas Muhammadiyah Surakarta</td></tr>
+            <tr><td>Hobi</td><td>:</td><td>Ngoprek</td></tr>            
+            <tr><td>Knowing</td><td>:</td><td>Java | XML | HTML | CSS | Javascript</td></tr>
+            <tr><td>Dislikes</td><td>:</td><td>Matematika | Python | Other</td></tr>            
+            <tr><td colspan=3>Just someone to want knowing about something new in technology, yes that's me.</td></tr>
+          </table>
+          <div class="nabilsocialmedia">
+            <a href="http://wa.me/6283146542084"><img src="image/whatsapp.png" alt="fb"/></a>
+            <a href="http://t.me/nabil_aba"><img src="image/telegram.png" alt="fb"/></a>
+            <a href="http://m.facebook.com/nabil.bima.7"><img src="image/facebook.png" alt="fb"/></a>
+            <a href="http://instagram.com/nabil_aba"><img src="image/instagram.png" alt="fb"/></a>
+          </div>
+          <p class="cp">Copyright© @nabil_aba<BR></p>
+        </div>
+      </footer>
+    </div>
+  </body>
+  <script>
+    document.title = localStorage.getItem('nama') + ' - Result';
+    window.onscroll = function() {
+      var posisi = document.body.scrollTop || document.documentElement.scrollTop;
+      var tinggihalaman = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      var sekarangdi = (posisi / tinggihalaman) * 100;
+      document.getElementById("nabilprogressscroll").style.width = sekarangdi + "%";
+    };
+
+    if (localStorage.getItem('nama') != "") {
+      document.getElementById('sertifnama').innerHTML = localStorage.getItem('nama');
+    }
+
+    if (localStorage.getItem('sertifjudul') != "") {
+      document.getElementById('sertifjudul').innerHTML = localStorage.getItem('sertifjudul');
+    }
+
+    if (localStorage.getItem('sertifinstitusi') != "") {
+    document.getElementById('sertifinstitusi').innerHTML = localStorage.getItem('sertifinstitusi');
+    }
+  </script>
+</html>		

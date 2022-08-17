@@ -1,0 +1,289 @@
+* {
+  margin: 0;
+  padding: 0px;
+}
+
+:root {
+  --nabil: #ACB6E5;
+}
+
+body {
+  background-repeat: no-repeat;
+  background: linear-gradient(to bottom, var(--nabil) 20%, #fff 100%);
+  font-size: 50px;
+  font-family: mainfont;
+  padding-bottom: 30px;
+}
+
+@media screen and (min-width: 1081px) {
+  body {
+    font-size: 18px;
+  }
+  
+  .marginfixnabil {
+    margin: 0 8%
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  body {
+    font-size: 35px;
+  }
+
+  .marginfixnabil {
+    margin: 0 3%;
+  }
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-image: url(../image/bgheader.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+header h1 {
+  font-family: judultugas;
+  font-size: calc(100% + 100px);
+}
+
+#nabilprogressscroll {
+  position: fixed;
+  height: 8px;
+  background: var(--nabil);
+  width: 0%;
+}
+
+.nabiltugas {
+  padding: 175px 0;
+}
+
+.nabiltitlecontent {
+  margin-top: 10px;
+  padding: 20px;
+  background-color: rgba(255,255,255,0.5);
+  background-image: url(../image/backgroundtitlecontent.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom-style: solid;
+  border-bottom-width: 4px;
+  border-bottom-color: rgba(0, 0, 0 ,0.5);;
+  border-radius: 25px;
+  text-align: center;
+  font-weight: lighter;
+  font-size: calc(100% + 50px);
+  font-family: judulkonten;
+}
+
+hr {
+  margin: 10px auto;
+  padding: 0 5px;
+  border: none;
+  border-bottom: 6px;
+  border-bottom-color: rgba(0,0,0,0.3);
+  border-bottom-style: dotted;
+  width: 20px;
+}
+
+main h1, footer h1 {
+  font-family: judulsection;
+  font-size: calc(100% + 30px);
+  font-weight: lighter;
+  margin-bottom: 20px;
+}
+
+.nabilbox {
+  margin-top: 6px;
+  padding: 50px;
+  background-color: rgba(255,255,255,0.5);
+  border-bottom-style: solid;
+  border-bottom-width: 4px;
+  border-bottom-color: rgba(0, 0, 0, 0.5);
+  border-radius: 25px;
+}
+
+ol, ul {
+  list-style-position: inside;
+}
+
+li {
+  padding: 10px 0;
+}
+
+main form {
+  text-align: center;
+}
+
+.nabilinputtitle {
+  width: 100%; 
+  text-align: left;
+  margin-top: 15px;
+}
+
+input {
+  font-size: 100%;
+  font-family: inherit;
+  margin: 10px 0;
+}
+
+.nabilinput {
+  background: transparent;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px;
+  border-style:solid;
+  border-color: var(--nabil);
+  border-radius: 20px;
+  padding: 30px 40px;
+  -webkit-appearance: none;
+}
+
+.nabilinput:focus {
+  outline: none;
+}
+
+.nabilsubmit {
+  font-size: 100%;
+  font-family: mainfont;
+  margin-top: 15px;
+  width: 100%;
+  padding: 30px 0;
+  background: var(--nabil);
+  border: none;
+  border-radius: 20px;
+}
+
+.nabilsubmit:active {
+  opacity: 0.7;
+}
+
+.nabilfixscrollhorizontal {
+  overflow-x: scroll;
+}
+
+.nabilfixscrollhorizontaldisplay {
+  display: inline-table;
+  width: 1000px;
+  min-height: 600px;
+}
+
+.sertiftemplate {
+  display: table-cell;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 15px;
+  border: 20px solid var(--nabil);
+}
+  
+.sertifteks {
+  font-family: sertifteks;
+  color: var(--nabil);
+  font-size: 70px;
+}
+ 
+#sertifjudul {
+  font-weight: bold;
+  font-size: 45px;
+  margin: 5px auto;
+}
+
+#sertifnama {
+  font-weight: bolder;
+  font-size: 45px;
+  margin: 5px auto;
+}
+
+#sertifinstitusi {
+  font-size: 25px;
+  margin: 5px auto;
+}
+
+.sertifket {
+  width: 500px;
+  margin: 10px auto;
+}
+
+.sertifpenyelenggara {
+  margin: 20px 30px;
+  float: right;
+  text-align: left;
+}
+
+.sertifttd {
+  margin: 5px;
+  text-align: center;
+  font-weight: lighter;
+  font-size: 40px;
+  font-family: sertifttd;
+}
+
+footer table {
+  font-size: 100%;
+  margin-bottom: 20px; 
+  border: null; 
+  width: 100%;
+}
+
+table td {
+  padding: 10px 0;
+  vertical-align: top;
+}
+
+.nabilsocialmedia {
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 15px;
+}
+
+.nabilsocialmedia img {
+  width: 6%;
+  height: 6%;
+  margin: 0 1%;
+}
+
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.cp {
+  text-align: center;
+  font-size: 70%;
+}
+
+@font-face {
+  font-family: judultugas;
+  src: url('../font/judultugas.ttf');
+}
+
+@font-face {
+  font-family: mainfont;
+  src: url('../font/main.ttf');
+}
+
+@font-face {
+  font-family: judulsection;
+  src: url('../font/judulsection.ttf');
+}
+
+@font-face {
+  font-family: judulkonten;
+  src: url('../font/judulkonten.ttf');
+}
+
+@font-face {
+  font-family: sertifttd;
+  src: url('../font/sertifttd.otf');
+}
+
+@font-face {
+  font-family: sertifteks;
+  src: url('../font/sertifteks.ttf');
+}
